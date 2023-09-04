@@ -1,7 +1,13 @@
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
-
+div {
+    padding: 0px;
+    margin: 0px;
+}
 :root {
     --clr-primary-100: #f9faf8;
     --clr-primary-200: #e5e7eb;
@@ -11,7 +17,7 @@
 
     
     --hero-primary-size: 48px;
-    --hero-secondary-size: 18px;
+    --hero-nav-size: 18px;
     --hero-logo-size: 24px;
 }
 
@@ -23,13 +29,35 @@
 
 .header {
     display: flex;
-    justify-content: space-between;
-    padding: 16px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px 32px;
     margin: 0px;
+    background-color: var(--clr-secondary-700);
+}
+
+.logo {
+    font-size: var(--hero-logo-size);
+    font-weight: 900;
+    color: var(--clr-primary-100);
+    padding-right: 32px;
+}
+
+.nav{
+    display: flex;
+}
+
+.nav__link {
+    margin: 8px;
+    padding: 0px;
+    font-size: var(--hero-secondary-size);
+    color: var(--clr-primary-200);
 }
 
 ul {
     list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 a {
