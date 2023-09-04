@@ -180,6 +180,10 @@ a {
     display: flex;
     flex-direction: column;
 }
+
+.wrap {
+    flex-wrap: wrap;
+}
 .padded {
     padding: 96px 32px;
 }
